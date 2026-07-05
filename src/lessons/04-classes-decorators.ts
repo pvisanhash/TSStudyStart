@@ -1,5 +1,6 @@
 import { section, show } from "../utils/output";
 
+// 装饰器工厂
 function Tagged(tag: string): ClassDecorator {
   return (target) => {
     Object.defineProperty(target.prototype, "__tag", {
