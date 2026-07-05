@@ -6,10 +6,29 @@
       "request": "launch",
       "name": "Debug TypeScript",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["--import", "tsx"],
+      "runtimeArgs": [
+        "--import",
+        "tsx"
+      ],
       "program": "${workspaceFolder}/src/index.ts",
       "cwd": "${workspaceFolder}",
-      "skipFiles": ["<node_internals>/**"]
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug 01-practice.ts",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "tsx",
+        "${workspaceFolder}/exercises/01-practice.ts"
+      ],
+      "cwd": "${workspaceFolder}",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
     }
   ]
 }
