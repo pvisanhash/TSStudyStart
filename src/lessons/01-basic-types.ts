@@ -30,12 +30,12 @@ export function runBasicTypesLesson(): void {
     NotFound = 404
   }
 
-  type Id = string | number;
-  type Theme = "light" | "dark" | "system";
+  type Id = string | number; // 联合类型
+  type Theme = "light" | "dark" | "system"; // 联合的字面量类型
   type Point = {
     x: number;
     y: number;
-  };
+  }; // 对象字面量类型
 
   interface UserProfile {
     id: Id;
